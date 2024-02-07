@@ -14,7 +14,7 @@ const Star = ({ size, count }) => {
     height: `${size}px`,
     background: "transparent",
     boxShadow: generateStars(count),
-    animation: `animStar ${50 * size}s linear infinite`,
+    animation: `animStar ${50 * size}s linear infinite, fadeIn 1s ease-in-out`,
   };
 
   const starAfterStyle = {

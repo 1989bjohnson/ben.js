@@ -1,2 +1,15 @@
 @import "../../style/colors.scss";
-@import "../../style//anim.scss";
+@import "../../style/anim.scss";
+
+.nav {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.overlay {
+  position: absolute;
+  background-color: $background;
+  z-index: 100;
+}
