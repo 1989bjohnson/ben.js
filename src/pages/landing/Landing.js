@@ -4,10 +4,20 @@ import Star from "../../components/stars/Star";
 import Button from "../../components/button/Button";
 import "./Landing.scss";
 import { routes } from "../../routing/Routing";
-import { CSSTransition } from "react-transition-group";
+import { AnimateList } from "../../components/effects/Animations";
 
 const Landing = () => {
   const navigate = useNavigate();
+
+  const filteredRoutes = routes.filter((route) => route.path !== "/");
+
+  const renderButton = (route, i) => {
+    return (
+      <Button className="fade-in-button" onClick={() => navigate(route.path)}>
+        {route.name}
+      </Button>
+    );
+  };
 
   return (
     <div className="section landing">
@@ -15,22 +25,17 @@ const Landing = () => {
       <Star size={2} count={100} />
       <Star size={3} count={50} />
       <div className="content center-content">
-        <h1 className="heading fade-in-05">ben.js</h1>
+        <h1 className="heading fade-in-heading">ben.js</h1>
         <nav className="nav">
           {routes.map((route, i) => {
             if (route.path === "/") return null;
             return (
-              <CSSTransition
-                key={i}
-                in={true}
-                appear={true}
-                timeout={1000}
-                classNames="fade"
+              <Button
+                className="fade-in-button"
+                onClick={() => navigate(route.path)}
               >
-                <Button onClick={() => navigate(route.path)}>
-                  {route.name}
-                </Button>
-              </CSSTransition>
+                {route.name}
+              </Button>
             );
           })}
         </nav>
