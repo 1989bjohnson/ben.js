@@ -1,0 +1,27 @@
+@import "../../style/global.scss";
+
+$border-width: 3px;
+
+.custom-card {
+  background-image: linear-gradient(45deg, $primary, $secondary, $tertiary);
+  width: 90%;
+  height: 90%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+  padding: $border-width;
+  .custom-card-container {
+    padding: 2rem;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #000;
+    width: 100%;
+    height: 100%;
+    z-index: 10;
+  }
+}

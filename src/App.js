@@ -1,9 +1,8 @@
-import React from "react";
-import Fullpage from "./components/fullpage/Fullpage";
+import Layout from "./layout/Layout";
 import "./style/global.scss";
 
 function App() {
-  return <Fullpage />;
+  return <Layout />;
 }
 
 export default App;

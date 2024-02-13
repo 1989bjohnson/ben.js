@@ -1,14 +1,14 @@
 import React, { createRef } from "react";
 import { useLocation, Routes, Route } from "react-router-dom";
 import { TransitionGroup, CSSTransition } from "react-transition-group";
-import Landing from "../pages/landing/Landing";
+import Layout from "../layout/Layout";
 import About from "../pages/about/About";
 import Projects from "../pages/projects/Projects";
 import Resume from "../pages/resume/Resume";
 import Contact from "../pages/contact/Contact";
 
 export const routes = [
-  { path: "/", name: "Home", element: <Landing />, nodeRef: createRef() },
+  { path: "/", name: "Home", element: <Layout />, nodeRef: createRef() },
   { path: "/about", name: "About", element: <About />, nodeRef: createRef() },
   {
     path: "/projects",
