@@ -34,6 +34,20 @@
   transition: all 0.5s ease-in-out;
 }
 
+.fade-in-logo {
+  opacity: 0;
+  animation: fadeIn 1s ease-in 2s forwards;
+  transition: all 0.5s ease-in-out;
+  width: 100%;
+  display: flex;
+}
+
+.fade-in-paragraph {
+    opacity: 0;
+    animation: fadeIn 1s ease-in 3s forwards;
+    transition: all 0.5s ease-in-out;
+}
+
 .fade-in-button {
   opacity: 0;
   transform: scaleY(0);
@@ -137,4 +151,24 @@
   50% {
     border-color: transparent;
   }
+}
+
+@keyframes dots {
+  0% {
+    content: ".";
+  }
+  33% {
+    content: "..";
+  }
+  66% {
+    content: "...";
+  }
+  100% {
+    content: ".";
+  }
+}
+
+.dots::after {
+  content: ".";
+  animation: dots 1s steps(1, end) infinite;
 }

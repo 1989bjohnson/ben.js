@@ -1,2 +1,16 @@
 @import "../../style/colors.scss";
 @import "../../style/anim.scss";
+
+.landing-logo {
+  width: 100%;
+  max-width: 80%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+.fs-logo {
+  filter: brightness(0) invert(1);
+  height: 128px;
+  margin: 0 auto;
+}

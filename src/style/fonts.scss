@@ -1,10 +1,20 @@
 @import url("https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&family=Cute+Font&family=Roboto:wght@300;400&family=Titillium+Web:wght@200&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Major+Mono+Display&family=Nova+Mono&family=VT323&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Changa:wght@200..800&family=Rammetto+One&family=Teko:wght@300..700&family=Tiny5&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Changa:wght@200..800&family=Quantico:ital,wght@0,400;0,700;1,400;1,700&family=Rammetto+One&family=Teko:wght@300..700&family=Tiny5&display=swap');
 
 .heading {
   font-family: "Titillium Web", sans-serif;
   text-align: center;
   margin: 0;
+}
+
+.coming-soon {
+  font-family: "Nova Mono", monospace;
+  text-align: center;
+  margin: 0;
+  font-size: 48px;
 }
 
 .sub-heading,
@@ -34,4 +44,28 @@
 
 .text-center {
   text-align: center;
+}
+
+.quantico-regular, .fs-logo {
+  font-family: "Quantico", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.quantico-bold, .fs-logo-bold {
+  font-family: "Quantico", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.quantico-regular-italic {
+  font-family: "Quantico", sans-serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.quantico-bold-italic {
+  font-family: "Quantico", sans-serif;
+  font-weight: 700;
+  font-style: italic;
 }

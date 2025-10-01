@@ -6,3 +6,27 @@ $text: #ffffff;
 $green: #21ff00;
 $yellow: #ffdd00;
 $red: #ff0033;
+
+.color-primary {
+  color: $primary;
+}
+
+.bg-primary {
+  background-color: $primary;
+}
+
+.color-secondary {
+  color: $secondary;
+}
+
+.bg-secondary {
+  background-color: $secondary;
+}
+
+.color-tertiary {
+  color: $tertiary;
+}
+
+.bg-tertiary {
+  background-color: $tertiary;
+}
